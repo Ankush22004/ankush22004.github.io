@@ -1,7 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head><title>Verified</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Now 💜</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .donate-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .donate-btn {
+      display: inline-block;
+      background: #ff416c;
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .donate-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 65, 108, 0.8);
+    }
+    .qr {
+      margin-top: 20px;
+    }
+    .qr img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
 <body>
-  <h2>This site is ready.</h2>
+  <div class="donate-box">
+    <h1>🙏 Support Us</h1>
+    <p>Your small help makes a big difference 💜</p>
+    <a href="upi://pay?pa=YOUR_UPI_ID@upi&pn=YourName&am=100&cu=INR" class="donate-btn">Donate with PhonePe</a>
+    
+    <div class="qr">
+      <p>Or scan QR to donate:</p>
+      <img src="your_qr_code.png" alt="Donate QR">
+    </div>
+  </div>
 </body>
 </html>
